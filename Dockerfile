@@ -27,6 +27,6 @@ WORKDIR /app
 # Copy the Pre-built binary file from the previous stage. Observe we also copied the .env file
 COPY --from=builder /app/main .
 # Expose port 3000 to the outside world
-EXPOSE 3000
+EXPOSE 80
 # Command to run the executable
 CMD ["./main"]
