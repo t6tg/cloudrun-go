@@ -26,7 +26,7 @@ FROM golang:1.17-alpine
 WORKDIR /app
 # Copy the Pre-built binary file from the previous stage. Observe we also copied the .env file
 COPY --from=builder /app/main .
-# Expose port 3000 to the outside world
-EXPOSE 80
+# Expose port 8080 to the outside world
+EXPOSE 8080
 # Command to run the executable
 CMD ["./main"]
